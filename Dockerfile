@@ -1,10 +1,11 @@
 # Basic install of esniper 
 #
 # Currently installs esniper 2-35-0
-# Version 0.3 June-17-2018
+# Version 0.1 09-04-2019
 
-FROM centos:latest
-MAINTAINER Felix G. version: 0.2
+# Raspberry 3 Build
+FROM arm32v7/alpine:latest
+MAINTAINER docker@chabs.name
 
 RUN yum update -y && \
     yum install -y gcc libcurl-devel gcc-c++ make && \
